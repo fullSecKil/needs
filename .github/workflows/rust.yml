@@ -14,11 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Change directory
+      run: cd ./hello_world
     - name: Build
       run: | 
-        cd ./hello_world
+        # cd ./hello_world
         cargo build --verbose
     - name: Run tests
       run: | 
-        cd ./hello_world 
+        # cd ./hello_world 
         cargo test --verbose
