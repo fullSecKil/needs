@@ -24,3 +24,7 @@ jobs:
       run: | 
         cd ./hello_world 
         cargo test --verbose
+    - name: Run grass
+      run: | 
+        cd ./grass 
+        cargo run --verbose
